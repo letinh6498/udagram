@@ -30,11 +30,11 @@ export AWS_PROFILE=default            // AWS Profile
 export AWS_BUCKET=my-udagram          // S3 bucket
 export AWS_DEFAULT_REGION=us-east-1   // AWS default region
 export AWS_REGION=us-east-1           // AWS region
-export AWS_PROFILE=default            // AWS profile
 export JWT_SECRET=mysecretstring      // JWT secret key
 export PORT=5432                      // Posgres Port
 export AWS_ACCESS_KEY_ID=             // AWS Acess Key ID
 export AWS_SECRET_ACCESS_KEY=         // AWS Secret Access Key
+export URL=                           // S3 URL  
 
 ```
 

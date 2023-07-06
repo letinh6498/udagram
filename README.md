@@ -12,7 +12,7 @@ The main feature of this project is:
 
 Frontend: http://my-udagram.s3-website-us-east-1.amazonaws.com/
 
-Backend: http://haro-dagram-api-dev.us-east-1.elasticbeanstalk.com/
+Backend: http://tinhle.us-east-1.elasticbeanstalk.com/
 
 ## Project Setup
 

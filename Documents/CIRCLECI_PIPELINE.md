@@ -1,7 +1,7 @@
-# The project pipeline
-
+# The Udagram pipeline
+This document outlines the pipeline for building and deploying a project using CircleCI.
 ## Project orbs
-
+Orbs are reusable packages of CircleCI configuration that can be shared across projects. This project uses the following orbs:
 ```
   node: circleci/node@5.0.2
   eb: circleci/aws-elastic-beanstalk@2.0.1
@@ -9,7 +9,7 @@
 ```
 
 ## Project script
-
+The project has several scripts defined in the `package.json` file to automate common tasks such as installing dependencies, building the project, and deploying it to AWS Elastic Beanstalk:
 ```json
 "scripts": {
     "frontend:install": "cd udagram/udagram-frontend && npm install -f",
@@ -23,7 +23,7 @@
 ```
 
 ## Project Job
-
+The pipeline consists of several jobs that are run in sequence to build and deploy the project.
 ### Build
 
 1. Install the node `node-version: '14.15'`
@@ -54,13 +54,13 @@
 
 ### Hold
 
-Hold the build of `main` branch to get approval. After the build is approved, run deploy job.
+The hold job is used to pause the pipeline and wait for manual approval before continuing. This is useful when you want to review the build before deploying it to production.
 
 ### Deploy
 
 Run the deploy job:
 
-1. Install the node `node-version: '14.15'`
+1. Install the node `node/install`
 2. Setup Elastic Beanstalk `eb/setup`
 3. Setup AWS CLI `aws-cli/setup`
 4. Checkout source code from github
@@ -72,5 +72,5 @@ Run the deploy job:
 
 ---
 ## Diagram
-
+Here is a diagram that illustrates the pipeline:
 ![Pipeline Diagram](pipeline_circleci.png)

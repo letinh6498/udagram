@@ -73,4 +73,4 @@ Run the deploy job:
 ---
 ## Diagram
 
-![Pipeline Diagram](PipelineDiagram.png)
+![Pipeline Diagram](pipeline_circleci.png)

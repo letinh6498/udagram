@@ -16,7 +16,7 @@ Backend: http://tinhle.us-east-1.elasticbeanstalk.com/
 
 ## Project Setup
 
-1. Clone source from repository: https://github.com/a
+1. Clone source from repository: https://github.com/letinh6498/udagram
 2. In AWS, provision a publicly available RDS database running Postgres.
 3. In AWS, provision a s3 bucket for hosting the uploaded files.
 4. Setup ENV variables:

@@ -12,4 +12,4 @@ Our system consists of three main components:
 
 This diagram shows how the different components of our system interact with each other. The front-end sends requests to the API, which processes the data and interacts with the database to retrieve or store information.
 
-![Architecture Diagram](ArchitectureDiagram.png)
+![Architecture Diagram](Architecture.png)

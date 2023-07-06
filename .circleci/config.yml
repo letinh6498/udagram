@@ -19,6 +19,10 @@ jobs:
       - run:
           name: Install Front-End Dependencies
           command: |
+            echo "NODE --version" 
+            echo $(node --version)
+            echo "NPM --version" 
+            echo $(npm --version)
             npm run frontend:install
       # TODO: Install dependencies in the the backend API
       - run:
@@ -27,12 +31,12 @@ jobs:
             npm run backend:install
       # TODO: Build the frontend app
       - run:
-          name: Front-End Build
+          name: Build Front-End
           command: |
             npm run frontend:build
       # TODO: Build the backend API
       - run:
-          name: API Build
+          name: Build API
           command: |
             npm run backend:build
   # deploy step will run only after manual approval
